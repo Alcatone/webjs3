@@ -1,0 +1,72 @@
+body {
+	background-image: url("images/champ.jpg");
+	background-size: cover;
+}
+
+.alpha {
+	text-align:center;
+	color: white;	
+	font-size:3em;
+	position: absolute;
+	top:0;
+	width:99%;
+	text-shadow: 6px 6px 6px black;
+}
+
+.zoneMenu {
+	display:flex; /*Placement Flexible CSS3*/
+	width:50%; /*Largeur de la zone menu*/
+	margin-top:10%; 
+	margin-left:25%;
+	height:300px; /* Hauteur fixe de la zone menu*/
+	color: white;
+	font-family:tahoma;
+	font-size: 1.2em; /*Taille caractère un peu plus grande*/
+}
+
+.flex {
+	display: inline-flex; /*Placement flexible CSS3 : les <div> sont "inline"*/
+	background-color: rgba(0, 0, 0, 0.4); /*CSS3: fond noir avec transparence 40%*/
+	height:90%;
+	margin-right:2%;
+}
+
+.zoneImg {
+	width: 60%;
+	text-align:center;
+}
+
+.zoneChoix{
+	width: 20%;
+	flex-direction: column; /* Les éléments seront en colonne*/
+	text-align:center;
+}
+
+.zoneChoix a { /*Pour les balise <a> placées dans la <div> zoneChoix*/
+	width: 90%;
+	height:30px;
+	margin:4%;
+	color: white;
+	text-decoration: none; /* pas de soulignement du lien html*/
+	text-shadow: red 5px 5px 5px;
+
+}
+
+.zoneChoix a:hover { /* CSS3: au passage de la souris, inversion des couleurs*/
+	background-color: #AFF766;
+	color: black;
+}
+
+.diapo {
+	width:96%;
+	height:90%;
+	margin:2%;
+}
+
+@media screen and (max-width: 450px) {
+	.zoneMenu {
+	width: 90%;
+	margin-left:5%;
+	}
+}
+
